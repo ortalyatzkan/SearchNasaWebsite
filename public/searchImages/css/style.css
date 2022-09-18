@@ -1,0 +1,23 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding-top: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.bg{
+  background-color: lightblue;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.registeredSuccessfully{
+  color: green;
+}
+
+.formTitle{
+  color: royalblue;
+  font-family: Arial, Helvetica, sans-serif;
+}

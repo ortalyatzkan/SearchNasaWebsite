@@ -1,0 +1,23 @@
+<%- include('includes/headBeginning.ejs')%>
+<%- include('includes/headEnd.ejs')%>
+<%-include('includes/cardBody')%>
+action="/enterPassword"
+<%-include('includes/formBody.ejs')%>
+<label for="email" class="form-label">Your mail</label>
+<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+<div class="errorMessage"><%=errorMail%></div>
+</div>
+<div class="mb-3">
+    <label for="firstName" class="form-label">Your first name</label>
+    <input type="text" pattern="[a-zA-z, -.']{1,}" name="firstName" id="firstName" class="form-control" required>
+</div>
+<div class="mb-3">
+    <label for="lastName" class="form-label">Your last name</label>
+    <input type="text" pattern="[a-zA-z, -.']{1,}" name="lastName" id="lastName" class="form-control" required>
+</div>
+<div class="mb-3">
+    <form method="post">
+    <input class="btn btn-outline-primary" type="submit" value="Next">
+    </form>
+</div>
+<%-include('includes/end.ejs')%>

@@ -1,0 +1,37 @@
+<%- include('includes/headBeginning.ejs')%>
+<%- include('includes/headEnd.ejs')%>
+<% if(registerMsg.includes('succeeded')){ %>
+    <div class="registeredSuccessfully"><%= registerMsg %></div>
+<%} else{%>
+    <div class="errorMessage"><%= registerMsg %></div>
+<%}%>
+<%-include('includes/cardBody.ejs')%>
+action='/nasaPage'
+<%-include('includes/formBody.ejs')%>
+                <label for="email" class="form-label">Your mail</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                <div ><%=errorMail%></div><br>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Your password</label>
+                <input type="password" pattern=".{8,}" title="8 characters minimum" class="form-control" name="password" id="password" aria-describedby="emailHelp" required>
+            </div>
+        <div class="mb-3">
+            <input class="btn btn-outline-dark" type="submit" formaction="/nasaPage"  value="Login">
+        </div>
+    </form>
+    <div class="mt-3 text-center">
+        <p>Or</p>
+        <form method="post">
+            <input class="btn btn-outline-primary" type="submit" formaction="/register" value="register">
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<div class="col-3"></div>
+</div>
+</div>
+
+</body>
+</html>
