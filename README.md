@@ -13,6 +13,10 @@ Open console, execute : npm install
 <h1>Execution</h1>
 <p>Use the configuration in Webstorm (top right 'play' button) or: open terminal,
 and execute : node bin/www
+If there is a problem try Delete the file database.sqlite3 and delete files under the migrations folder and execute: 
+1.node_modules/.bin/sequelize model:generate --name Users --attributes firstName:string,lastName:string,email:string,password:string
+2.node_modules/.bin/sequelize db:migrate
+
 </p>
 <p>
 Then open your browser at http://localhost:3000
